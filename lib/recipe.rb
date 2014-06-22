@@ -10,7 +10,9 @@ class Recipe
 end
 
 if __FILE__ == $0
-  recipes = RecipeSource.read 'data/recipes.yaml'
-  recipe = Recipe.new recipes.first
-  puts recipe.title
+  recipes = RecipeSource.new('data/recipes.yaml').read
+  recipes.each do |recipe|
+    r = Recipe.new recipe
+    puts r.title
+  end
 end
