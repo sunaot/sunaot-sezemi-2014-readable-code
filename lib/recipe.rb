@@ -1,6 +1,7 @@
 #!/usr/bin/env ruby
 require 'yaml'
 require 'recipe_source'
+require 'recipe_viewer'
 
 class Recipe
   attr_accessor :title
@@ -11,8 +12,5 @@ end
 
 if __FILE__ == $0
   recipes = RecipeSource.new('data/recipes.yaml').read
-  recipes.each do |recipe|
-    r = Recipe.new recipe
-    puts r.title
-  end
+  RecipeViewer.new.show_recipes recipes.map {|recipe| Recipe.new(recipe) }
 end
