@@ -2,7 +2,7 @@ require 'test/unit'
 require_relative '../lib/recipe'
 class RecipeTest < Test::Unit::TestCase
   def setup
-    @recipe = Recipe.new
+    @recipe = Recipe.new 'data/recipes.yaml'
   end
 
   def test_recipe
