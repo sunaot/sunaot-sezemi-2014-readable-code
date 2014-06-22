@@ -8,6 +8,5 @@ Ruby をインストールします。(Ruby 2.1.2 で動作確認しています
 
 ## 実行
 
-    ruby lib/recipe.rb
-
+    ruby -Ilib lib/recipe.rb
 

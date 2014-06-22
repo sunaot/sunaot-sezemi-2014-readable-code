@@ -1,5 +1,7 @@
 #!/usr/bin/env ruby
 require 'yaml'
+require 'recipe_source'
+
 class Recipe
   attr_accessor :title
   def initialize recipe
@@ -8,10 +10,7 @@ class Recipe
 end
 
 if __FILE__ == $0
-  recipes = []
-  File.open('data/recipes.yaml', 'r') do |f|
-    recipes += YAML::load(f.read)
-  end
+  recipes = RecipeSource.read 'data/recipes.yaml'
   recipe = Recipe.new recipes.first
   puts recipe.title
 end

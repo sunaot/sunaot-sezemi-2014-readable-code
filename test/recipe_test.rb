@@ -1,5 +1,6 @@
 require 'test/unit'
 require_relative '../lib/recipe'
+
 class RecipeTest < Test::Unit::TestCase
   def setup
     @recipe = Recipe.new(title: '握り飯')
