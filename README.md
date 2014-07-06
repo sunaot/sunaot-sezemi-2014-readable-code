@@ -8,7 +8,19 @@ Ruby をインストールします。(Ruby 2.1.2 で動作確認しています
 
 ## 実行
 
+### すべてのレシピ
+
     ruby -Ilib lib/recipe.rb
+
+### レシピ指定
+
+recipe index に 0..2 のインデックスを指定する
+
+    ruby -Ilib lib/recipe.rb <recipe index>
+
+## テストの実行
+
+    ruby -Ilib test/<test_file_name>.rb
 
 ## データファイル
 
