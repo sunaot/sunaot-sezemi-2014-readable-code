@@ -1,8 +1,7 @@
 require 'test/unit'
 require_relative '../lib/recipe_viewer'
-require 'stringio'
 
-class RecipeTest < Test::Unit::TestCase
+class RecipeViewerTest < Test::Unit::TestCase
   Recipe = Struct.new(:title, :url)
 
   def setup
