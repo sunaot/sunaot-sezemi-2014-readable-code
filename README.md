@@ -1,5 +1,7 @@
 # Recipe
 
+[![Build Status](https://travis-ci.org/sunaot/sunaot-sezemi-2014-readable-code.svg)](https://travis-ci.org/sunaot/sunaot-sezemi-2014-readable-code)
+
 ## インストール
 
 Ruby をインストールします。(Ruby 2.1.2 で動作確認しています)
