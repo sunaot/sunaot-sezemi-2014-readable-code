@@ -7,6 +7,6 @@ class RecipeSourceTest < Test::Unit::TestCase
   end
 
   def test_read
-    assert_equal [{title: 'チキンライス'}, {title: "麦飯"}], @recipe_source.read
+    assert_equal [{title: 'チキンライス', url: 'http://cookpad.com/recipe/1'}, {title: "麦飯", url: 'http://cookpad.com/recipe/2'}], @recipe_source.read
   end
 end
