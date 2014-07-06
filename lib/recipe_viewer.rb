@@ -24,6 +24,6 @@ class RecipeViewer
 
   def render_recipe index, recipe
     id = "%02d" % (index + 1)
-    puts "#{id}: #{recipe.title}"
+    puts "#{id}: [#{recipe.title}](#{recipe.url})"
   end
 end

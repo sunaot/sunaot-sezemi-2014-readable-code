@@ -31,6 +31,9 @@ recipe index に 0..2 のインデックスを指定する
 ```yaml
 ---
 - :title: "オムライス"
+  :url: "http://cookpad.com/recipe/2653946"
 - :title: "親子丼"
+  :url: "http://cookpad.com/recipe/2657882"
 - :title: "杏仁豆腐"
+  :url: "http://cookpad.com/recipe/2654398"
 ```

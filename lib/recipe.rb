@@ -6,9 +6,10 @@ require 'recipe_viewer'
 class Recipe
   DEFAULT_PATH = 'data/recipes.yaml'
 
-  attr_accessor :title
+  attr_accessor :title, :url
   def initialize recipe
-    @title = recipe[:title]
+    self.title = recipe[:title]
+    self.url = recipe[:url]
   end
 
   def self.all path = DEFAULT_PATH
