@@ -18,5 +18,11 @@ class Recipe
 end
 
 if __FILE__ == $0
-  RecipeViewer.new.show_recipes Recipe.all
+  if ARGV.size > 0
+    index = ARGV.shift
+    raise ArgumentError.new("Expect Integer (0..) for argument values, but #{index.to_i} is given.") if index.to_i =~ /\d+/
+    RecipeViewer.new(Recipe.all).show_recipes index.to_i
+  else
+    RecipeViewer.new(Recipe.all).show_recipes
+  end
 end
